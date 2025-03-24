@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { lusitana } from './ui/fonts';
 import Image from 'next/image';
 import '@/app/ui/global.css';
+// tailwindの変数つかいたかっただけ
 
 export default function Page() {
   return (
@@ -22,7 +23,7 @@ export default function Page() {
           </p>
           <Link
             href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-[var(--bg-in)] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+            className="flex items-center gap-5 self-start rounded-lg bg-[var(--bg-in)] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-indigo-800 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
