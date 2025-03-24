@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --bg-in:oklch(0.585 0.233 277.117);
+  --tx-col:blue;
+}
+
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
