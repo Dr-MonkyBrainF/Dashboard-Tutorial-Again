@@ -5,6 +5,11 @@
 :root{
   --bg-in:oklch(0.585 0.233 277.117);
   --tx-col:blue;
+
+  --bg-l1:#5fc85d;
+  --bg-l2:#36868f;
+  --bg-l3:#203671;
+  --bg-l4:#0f052d;
 }
 
 input[type='number'] {
