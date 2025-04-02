@@ -10,13 +10,13 @@ export default async function LatestInvoices({
 }) {
   return (
     <div className="flex w-full flex-col md:col-span-4">
-      <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+      <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl text-[var(--bg-l1)]`}>
         Latest Invoices
       </h2>
-      <div className="flex grow flex-col justify-between rounded-xl bg-gray-50 p-4">
+      <div className="flex grow flex-col justify-between rounded-xl bg-[var(--bg-l2)] p-4">
         {/* NOTE: Uncomment this code in Chapter 7 */}
 
-        {/* <div className="bg-white px-6">
+        <div className="bg-[var(--bg-l3)] rounded-xl px-6">
           {latestInvoices.map((invoice, i) => {
             return (
               <div
@@ -40,7 +40,7 @@ export default async function LatestInvoices({
                     <p className="truncate text-sm font-semibold md:text-base">
                       {invoice.name}
                     </p>
-                    <p className="hidden text-sm text-gray-500 sm:block">
+                    <p className="hidden text-sm text-gray-100 sm:block">
                       {invoice.email}
                     </p>
                   </div>
@@ -53,10 +53,10 @@ export default async function LatestInvoices({
               </div>
             );
           })}
-        </div> */}
+        </div>
         <div className="flex items-center pb-2 pt-6">
-          <ArrowPathIcon className="h-5 w-5 text-gray-500" />
-          <h3 className="ml-2 text-sm text-gray-500 ">Updated just now</h3>
+          <ArrowPathIcon className="h-5 w-5" />
+          <h3 className="ml-2 text-sm text-white ">Updated just now</h3>
         </div>
       </div>
     </div>
